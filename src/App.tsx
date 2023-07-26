@@ -36,10 +36,11 @@ function App() {
           </div>
           {value && <>
             <p>Private key:</p>
-            <Code colorScheme="red">{value}</Code>
+            <Code colorScheme="red" className="break-all">{value}</Code>
             <Button onClick={onCopy} colorScheme="whatsapp">{hasCopied ? "Copied!" : "Copy to Clipboard"}</Button>
           </>}
         </div>
+        
       </Box>
     </>
   )
